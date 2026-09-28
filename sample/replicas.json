@@ -1,0 +1,19 @@
+{
+  "budget": 2,
+  "quorum": 2,
+  "grace": 2,
+  "bad_w_code": "E_BAD_W",
+  "no_replica_code": "E_NO_REPLICA",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "replicas": [["a", 0], ["b", 0], ["c", 0]], "pending": [], "committed": 0,
+             "nextw": 1, "mode": "sync", "waiting": 0, "degrades": 0, "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "put" },
+    { "id": 2, "kind": "ack", "replica": "a", "w": 1 },
+    { "id": 3, "kind": "ack", "replica": "b", "w": 1 },
+    { "id": 4, "kind": "put" },
+    { "id": 5, "kind": "tick" },
+    { "id": 6, "kind": "tick" },
+    { "id": 7, "kind": "put" }
+  ]
+}
